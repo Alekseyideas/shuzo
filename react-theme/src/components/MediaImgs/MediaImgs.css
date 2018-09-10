@@ -1,0 +1,13 @@
+.media-image{
+  width: 100px;
+  border: 1px solid grey;
+  height: 100px;
+  background: #000 no-repeat center / cover;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .4s;
+}
+.media-image:hover{
+  opacity: .5;
+}

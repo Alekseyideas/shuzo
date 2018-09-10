@@ -1,0 +1,58 @@
+.btn
+  display: inline-block
+  font-size: 15px
+  transition: .2s
+  border: 0
+  outline: 0
+  cursor: pointer
+  padding: 10px 20px
+  margin: 10px
+  border-radius: 4px
+
+  &-delete
+    background: red
+    color: white
+    &:hover
+      background: #b30000
+
+  &-edit
+    background: #ff8428
+    color: white
+    &:hover
+      background: #b45d1c
+
+  &-create
+    background: green
+    color: white
+    position: absolute
+    top: 0
+    right: 0
+    &:hover
+      background: #004a00
+
+  &-close
+    background: none
+    position: absolute
+    right: 0
+    top: 5px
+    line-height: 0
+    padding: 0
+    font-size: 30px
+    &:hover
+      opacity: .5
+
+  &-control
+    background: black
+    color: white
+    position: fixed
+    bottom: 0
+    left: 0
+    margin: 0
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+    border-bottom-right-radius: 0
+    font-size: 1.1rem
+    font-weight: 300
+    opacity: .5
+    &:hover
+      opacity: 1

@@ -1,0 +1,72 @@
+@import "../../../sass-global/default-import"
+
+.homeSlide
+  height: 100vh
+  background: black no-repeat center / cover
+  display: flex
+  align-items: center
+  color: white
+@keyframes fadein
+  from
+    opacity: 0
+  to
+    opacity: 1
+@keyframes fadeout
+  from
+    opacity: 1
+  to
+    opacity: 0
+.homeSlideInner
+  width: 100%
+  padding: 60px 0
+  transition: .2s
+
+.homeSlideTitle
+  font-size: 16.5rem
+  line-height: 1em
+  margin: 0
+
+  +maxTablet()
+    font-size: 10rem
+  +maxMobile()
+    font-size: 4rem
+
+
+.homeSlideTitle,
+.homeSlideText
+  opacity: 0.4
+  transition: 1.5s
+  animation: 1s ease 0s normal forwards 1 fadeout
+
+.homeSlideText
+  font-family: $secondary-font
+  font-style: italic
+  width: 100%
+  padding: 0 40px
+  max-width: 663px
+  display: block
+  margin: auto
+  font-size: 2.3rem
+  line-height: 1.2em
+
+.slick-current
+  .homeSlideTitle,
+  .homeSlideText
+    &.active
+      opacity: 1
+      transition: .5s
+      animation: 1s ease 0s normal forwards 1 fadein
+
+
+
+
+
+
+
+
+
+
+
+
+
+

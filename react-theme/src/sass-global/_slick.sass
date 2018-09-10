@@ -1,0 +1,78 @@
+.slick-slider
+  //overflow: hidden
+
+.slick-dots
+  display: flex !important
+  width: 100%
+  justify-content: center
+  position: absolute
+  left: 0
+  bottom: 0
+  padding: 0
+  li
+    cursor: pointer
+  button
+    background: white
+    border: 2px solid white
+    height: 10px
+    width: 10px
+    border-radius: 50%
+    outline: 0
+    padding: 0
+    margin: 0 4px
+    position: relative
+    transition: .2s
+    font-size: 0
+    box-shadow: 0 0 0 2px white
+    z-index: 2
+    cursor: pointer
+    &:hover
+      opacity: .7
+  .slick-active
+    button
+      box-shadow: 0 0 0 2px white
+      border: 2px solid black
+      cursor: default
+      &:hover
+        opacity: 1
+
+
+
+.slick-arrow
+  position: absolute
+  top: 50%
+  z-index: 1
+  font-size: 0
+  width: 21px
+  border: 0
+  outline: 0
+  cursor: pointer
+  transition: .2s
+  height: 47px
+  background: url('./imgs/arrow.svg') no-repeat center / cover
+  &:hover
+    opacity: .5
+  &:active
+    opacity: .1
+.slick-prev
+  transform: rotate(180deg)
+
+.slick-prev
+  left: 10px
+
+.slick-next
+  right: 10px
+
+.custom-dots
+  .slick-dots
+    button
+      background: lightgrey
+      border: 2px solid lightgrey
+    .slick-active
+      button
+        background: lightgrey
+        border: 2px solid #afafaf
+
+
+
+

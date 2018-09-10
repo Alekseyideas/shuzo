@@ -1,0 +1,71 @@
+html
+  font-size: 10px
+
+body
+  background: white
+  font-family: $default-font
+  font-size: 1.4rem
+  margin: 0
+  cursor: pointer
+  padding: 0
+  color: $default-color
+
+ul
+  li
+    list-style: none
+
+
+.form-group
+  width: 100%
+  margin: 10px 0
+
+input,textarea
+  display: block
+  outline: 0
+  border: 1px solid lightgray
+  border-radius: 5px
+  box-sizing: border-box
+  width: 100%
+  padding: 10px
+  box-shadow: none
+
+div
+  box-sizing: border-box
+  width: 100%
+
+*
+  box-sizing: border-box
+
+label
+  cursor: pointer
+  color: grey
+  transition: .2s
+  &:hover
+    opacity: .5
+
+.flex
+  display: flex
+
+.f-a-c
+  -ms-flex-align: center
+
+.f-wrap
+  flex-wrap: wrap
+
+.btn-success
+  background: green
+  color: white
+  &:hover
+    background: #006400
+    color: white
+.container
+  width: 100%
+  max-width: 1200px
+  padding: 0 20px
+  display: block
+  margin: auto
+
+.hasAnimation
+  opacity: 0
+  &.animated
+    opacity: 1
